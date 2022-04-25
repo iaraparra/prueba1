@@ -1,0 +1,119 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(63, 0, 37)
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedorLocal {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 160px 150px 150px 60px;
+    gap: 5px;
+    grid-template-areas:    "logo   logo"
+                            "nav    nav"
+                            "mapa   info"
+                            "mapa   info"
+                            "footer footer";
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+
+.li{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    background-color: rgb(250, 198, 222);
+}
+
+.mapa {
+    grid-area: mapa;
+}
+
+.info {
+    font-size: 10pt;
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: top;
+    padding: 5px;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(250, 198, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__boton{
+    background-color: rgb(206, 67, 113);
+    border-radius: 3px;
+    color: rgb(31, 0, 19);
+    border: 1px solid rgb(31, 0, 19);
+}
+
+
+@media (min-width:1200px) {
+    .contenedorLocal {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 100px 60px 150px 150px 60px;
+        gap: 15px;
+        grid-template-areas:    "logo   logo"
+                                "nav    nav"
+                                "mapa   info"
+                                "mapa   info"
+                                "footer footer";
+    }
+    .logo {
+        margin-top: 15px;
+        grid-area: logo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info {
+        font-size: 14pt;
+        grid-area: info;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: top;
+    }
+    .mapa {
+        grid-area: mapa;
+    }
+    .nav{
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+
+    }
+    .li{
+        display: inline;
+        padding: 10px;
+    }
+}

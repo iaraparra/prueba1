@@ -1,0 +1,66 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(63, 0, 37)
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedorIndex{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 160px 100px auto 60px;
+    gap: 5px;
+    grid-template-areas:    "logo"
+                            "nav"
+                            "imagen1"
+                            "productos"
+                            "footer";
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+.li{
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    grid-area: nav;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+    background-color: rgb(250, 198, 222);
+}
+
+
+
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(250, 198, 222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__boton{
+    background-color: rgb(206, 67, 113);
+    border-radius: 3px;
+    color: rgb(31, 0, 19);
+    border: 1px solid rgb(31, 0, 19);
+}
+
+.imagen1__principal{
+    grid-area: imagen1;
+}
